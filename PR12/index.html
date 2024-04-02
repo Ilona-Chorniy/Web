@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота №12</title>
+</head>
+
+<body>
+    <h1>Практична робота № 12 Чорній Ілони Андріївни</h1>
+    <form id="myForm">
+        <label for="username">Ім'я користувача:</label>
+        <input type="text" id="username" name="username">
+        <br>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+        <div>
+            <input type="radio" id="snidane" name="posil" value="сніданок">
+            <label for="snidane">Сніданок</label>
+        </div>
+
+        <div>
+            <input type="radio" id="obid" name="posil" value="обід">
+            <label for="obid">Обід</label>
+        </div>
+
+        <div>
+            <input type="radio" id="vechir" name="posil" value="вечір">
+            <label for="vechir">Вечеря</label>
+        </div>
+        <div>
+            <input type="checkbox" id="borshch" name="food" value="борщ">
+            <label for="borshch">Борщ</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="kasha" name="food" value="кашу">
+            <label for="kasha">Вівсяна каша</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="pasta" name="food" value="пасту">
+            <label for="pasta">Паста Болоньєзе</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="pizza" name="food" value="піцу">
+            <label for="pizza">Піца</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="shashlyk" name="food" value="шашлик">
+            <label for="shashlyk">Шашлик</label>
+        </div>
+        <label for="comment">Коментар:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+        <button type="submit">Надіслати</button>
+    </form>
+    <div id="output"></div>
+    <script src="PR12.js"></script>
+    </body>
+    </html>
