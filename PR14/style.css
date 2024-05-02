@@ -1,0 +1,47 @@
+h1 {
+    text-align: center; /* Aligns the text in the center */
+}
+/* Стилі для кнопок та поля з лампочками */
+.wrapper {
+    margin: 0 auto; /* Auto margin horizontally centers the wrapper */
+    width: fit-content; /* Adjusts wrapper width to its content */
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    background-color: #7b1de8; /* Зелений колір */
+    color: white;
+    margin-right: 10px; /* Add margin between buttons */
+}
+
+#restart-button {
+    background-color: #c766f5; /* Червоний колір */
+    color: white;
+}
+
+/* Стилі для поля з лампочками */
+#field-container {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc; /* Колір лампочки вимкненої */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.light.on {
+    background-color: rgb(18, 31, 224); /* Колір лампочки увімкненої */
+}
