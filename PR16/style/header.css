@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-content,
+.navbar-content ul > li,
+.communication p {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(252, 252, 252);
+    color: #323a84;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin: 0 auto;
+}
+.logotype {
+    display: flex;
+}
+.logo-img {
+    width: 120px;
+    height: 120px;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.logo-name {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-shadow: #1234cb 2px 2px;
+}
+.logo-name a {
+    color: inherit;
+}
+.family-logo-img {
+    width: 30px;
+    height: 30px;
+}
+.logotype-family {
+    display: flex;
+}
+.name-logo-family {
+    line-height: 30px;
+    color: black;
+    font-weight: 700;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+.navbar {
+    display: flex;
+    font-weight: 600;
+}
+.navbar-content ul {
+    display: flex;
+}
+.navbar-content ul > li {
+    margin: 0 10px;
+    display: flex;
+    min-height: 60px;
+    background-position: top 5px left 50%;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #2513ca;
+    transition: all 0.25s ease;
+    font-size: 1em;
+    padding: 5px ;
+    border-radius: 5px;
+}
+.navbar-content ul > li:hover {
+    background-color: #2f23d9;
+    color: white;
+}
+.navbar-content ul > li:first-child {
+    background-image: url("image/catalog.png");
+}
+
+.navbar-content ul > li:nth-child(2) {
+    background-image: url("image/about.png");
+}
+.navbar-content ul > li:last-child {
+    background-image: url("image/award.png");
+}
+.link-catalog {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.link-about {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.link-awards{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.link-number {
+    display: flex;
+    color: #4517e8;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: inherit;
+    transition: all 0.25s ease;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+}
+.link-number::before {
+    content: "";
+    align-self: center;
+    background: url("image/phobe.png") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.link-number:hover {
+    background-color: #210068;
+    color: white;
+}
+.communication {
+    width: fit-content;
+    padding: 5px 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.communication p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 7px;
+}
+.main-content .communication{
+    display: none;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .logo-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .navbar-content ul, .communication {
+        align-items:center;
+        margin-top: 20px;
+    }
+    .communication p {
+        font-size: 16px;
+        margin-left: 90px;
+    }
+    .logo-img {
+        width: 100px;
+        height: 100px;
+    }
+    .logo-name {
+        font-size: 24px;
+    }
+    .logo-img {
+        display: none;
+    }
+    
+}@media (max-width: 768px) {
+    .communication {
+        display: none;
+    }
+    .main-content .communication{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .link-number{
+        width: 100%;
+        background-color: #fff;
+        border: solid 3px #17024c;
+        border-radius: 5px;
+        justify-content: center;
+    }
+    .communication p {
+        color: #130347;
+    }
+    .logo-img {
+        display: none;
+    }
+    .logo-name {
+        font-size: 20px;
+    }
+}
